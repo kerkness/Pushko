@@ -145,7 +145,7 @@ abstract class Pushko_Core {
 		$response = curl_exec($ch);
 
 		curl_close($ch);
-
+		
 		if ($response == "202 ACCEPTED\n" && $debug == FALSE)
 		{
 			return TRUE;
